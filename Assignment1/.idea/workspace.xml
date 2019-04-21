@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8c103888-b4f1-4158-b551-56a450a62691" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/DataMiningAssignment1$cluster.coverage" NAME="cluster Coverage Results" MODIFIED="1554694299373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/q2/data2" />
+    <SUITE FILE_PATH="coverage/DataMiningAssignment1$DataMiningAssignment1.coverage" NAME="DataMiningAssignment1 Coverage Results" MODIFIED="1554632912543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/DataMiningAssignment1$train.coverage" NAME="train Coverage Results" MODIFIED="1554692839557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/q2/data2" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/q2/Word2Vec_averge/cluster.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+                <marker date="1555652403765" expanded="true" signature="1106:1468" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>print</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/business_pre.py" />
+        <option value="$PROJECT_DIR$/q2/user_analysis.py" />
+        <option value="$PROJECT_DIR$/q2/data2/review_cluster.py" />
+        <option value="$PROJECT_DIR$/q2/data2/Analysis.ipynb" />
+        <option value="$PROJECT_DIR$/q2/data2/tfidf.py" />
+        <option value="$PROJECT_DIR$/q1/cluster_science.py" />
+        <option value="$PROJECT_DIR$/q2/data2/feature_old.py" />
+        <option value="$PROJECT_DIR$/q1/density_peak.py" />
+        <option value="$PROJECT_DIR$/q2/data2/train.py" />
+        <option value="$PROJECT_DIR$/q2/data2/feature.py" />
+        <option value="$PROJECT_DIR$/q2/data2/feature_doc2vec.py" />
+        <option value="$PROJECT_DIR$/q2/data2/cluster.py" />
+        <option value="$PROJECT_DIR$/q2/Word2Vec_averge/train.py" />
+        <option value="$PROJECT_DIR$/q2/Word2Vec_averge/feature.py" />
+        <option value="$PROJECT_DIR$/q2/Word2Vec_tfidf/train.py" />
+        <option value="$PROJECT_DIR$/q2/Word2Vec_tfidf/feature.py" />
+        <option value="$PROJECT_DIR$/q2/Doc2Vec/train.py" />
+        <option value="$PROJECT_DIR$/q2/Doc2Vec/feature.py" />
+        <option value="$PROJECT_DIR$/q2/Word2Vec_tfidf/cluster.py" />
+        <option value="$PROJECT_DIR$/q2/Doc2Vec/cluster.py" />
+        <option value="$PROJECT_DIR$/q2/Word2Vec_averge/cluster.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DataMiningAssignment1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningAssignment1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningAssignment1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningAssignment1" type="462c0819:PsiDirectoryNode" />
+              <item name="q1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningAssignment1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningAssignment1" type="462c0819:PsiDirectoryNode" />
+              <item name="q2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningAssignment1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningAssignment1" type="462c0819:PsiDirectoryNode" />
+              <item name="q2" type="462c0819:PsiDirectoryNode" />
+              <item name="data2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningAssignment1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningAssignment1" type="462c0819:PsiDirectoryNode" />
+              <item name="q2" type="462c0819:PsiDirectoryNode" />
+              <item name="Doc2Vec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningAssignment1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningAssignment1" type="462c0819:PsiDirectoryNode" />
+              <item name="q2" type="462c0819:PsiDirectoryNode" />
+              <item name="Word2Vec_averge" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMiningAssignment1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMiningAssignment1" type="462c0819:PsiDirectoryNode" />
+              <item name="q2" type="462c0819:PsiDirectoryNode" />
+              <item name="Word2Vec_tfidf" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/q2/Doc2Vec" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="DataMiningAssignment1" sdk-home="$USER_HOME$/anaconda3/envs/MuTao/bin/python">
+        <option name="useSoftWraps" value="true" />
+        <option name="mySdkHome" value="$USER_HOME$/anaconda3/envs/MuTao/bin/python" />
+        <option name="myModuleName" value="DataMiningAssignment1" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/q2/Doc2Vec" />
+      <recent name="$PROJECT_DIR$/q2/Word2Vec_averge" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.cluster">
+    <configuration name="DataMiningAssignment1" type="JupiterNotebook" factoryName="Jupyter Notebook">
+      <module name="DataMiningAssignment1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="additionalOptions" value="" />
+      <option name="ipnbHost" value="127.0.0.1" />
+      <option name="ipnbPort" value="8888" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="DataMiningAssignment1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cluster" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DataMiningAssignment1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/q2/Word2Vec_averge" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/q2/Word2Vec_averge/cluster.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.cluster" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.cluster" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c103888-b4f1-4158-b551-56a450a62691" name="Default Changelist" comment="" />
+      <created>1554295887013</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554295887013</updated>
+      <workItem from="1554295888310" duration="184000" />
+      <workItem from="1554297847729" duration="745000" />
+      <workItem from="1554378985021" duration="128000" />
+      <workItem from="1554624946536" duration="215000" />
+      <workItem from="1554625190728" duration="14732000" />
+      <workItem from="1554712242972" duration="33000" />
+      <workItem from="1554712475793" duration="237000" />
+      <workItem from="1554713191017" duration="13000" />
+      <workItem from="1554713637940" duration="6257000" />
+      <workItem from="1554723272107" duration="8281000" />
+      <workItem from="1554787414974" duration="2867000" />
+      <workItem from="1554805391536" duration="17444000" />
+      <workItem from="1554986732698" duration="1812000" />
+      <workItem from="1555047085790" duration="6742000" />
+      <workItem from="1555054742359" duration="9000" />
+      <workItem from="1555250541893" duration="9392000" />
+      <workItem from="1555391184632" duration="24688000" />
+      <workItem from="1555487641139" duration="9259000" />
+      <workItem from="1555507639098" duration="58000" />
+      <workItem from="1555507703990" duration="12904000" />
+      <workItem from="1555587007638" duration="11575000" />
+      <workItem from="1555642377742" duration="1520000" />
+      <workItem from="1555650012635" duration="135000" />
+      <workItem from="1555651905695" duration="710000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="130051000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33619457" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32891566" />
+      <window_info anchor="bottom" x="21" y="312" width="1398" height="273" id="Python Console" order="12" weight="0.3" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" x="489" y="171" width="461" height="557" id="SciView" order="3" sideWeight="0.4884956" weight="0.35693848" />
+      <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" order="4" sideWeight="0.5115044" side_tool="true" weight="0.35693848" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32904148" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DataMiningAssignment1$feature.coverage" NAME="feature Coverage Results" MODIFIED="1555413109994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/q2/data2" />
+    <SUITE FILE_PATH="coverage/DataMiningAssignment1$feature_old.coverage" NAME="feature_old Coverage Results" MODIFIED="1555053516987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/q2/data2" />
+    <SUITE FILE_PATH="coverage/DataMiningAssignment1$tfidf.coverage" NAME="tfidf Coverage Results" MODIFIED="1554731995948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/q2/data2" />
+    <SUITE FILE_PATH="coverage/DataMiningAssignment1$train.coverage" NAME="train Coverage Results" MODIFIED="1555477450226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/q2/data2" />
+    <SUITE FILE_PATH="coverage/DataMiningAssignment1$cluster.coverage" NAME="cluster Coverage Results" MODIFIED="1555506013196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/q2/data2" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/business_pre.py" />
+    <entry file="file://$PROJECT_DIR$/Analysis.ipynb" />
+    <entry file="file://$PROJECT_DIR$/q2/business_table.csv" />
+    <entry file="file://$PROJECT_DIR$/q2/user_analysis.py" />
+    <entry file="file://$PROJECT_DIR$/q2/data1/Analysis.ipynb" />
+    <entry file="file://$PROJECT_DIR$/q2/data2/review_cluster.py" />
+    <entry file="file://$PROJECT_DIR$/q2/data2/corpus.bin">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-67350" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/MuTao/lib/python3.7/site-packages/sklearn/feature_extraction/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="256" selection-start-line="256" selection-end-line="256" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/MuTao/lib/python3.7/site-packages/gensim/models/doc2vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="825" selection-start-line="825" selection-end-line="825" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/MuTao/lib/python3.7/site-packages/IPython/core/interactiveshell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="3295" selection-start-line="3295" selection-end-line="3295" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/MuTao/lib/python3.7/site-packages/sklearn/cluster/k_means_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="314" selection-start-line="314" selection-end-line="314" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/data1/business_table.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="462" selection-start-line="1" selection-start-column="462" selection-end-line="1" selection-end-column="462" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/data2/feature_word_tfidf_100.csv" />
+    <entry file="file://$PROJECT_DIR$/q2/data2/feature_word_tfidf.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="154">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q1/density_peak.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/data2/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="24" column="55" lean-forward="true" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/data2/compare.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="false" fixedHeaders="false" rowLines="3">
+          <column index="0" width="100" />
+          <column index="1" width="100" />
+          <column index="2" width="100" />
+          <column index="3" width="100" />
+          <column index="4" width="100" />
+          <column index="5" width="100" />
+          <column index="6" width="100" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="89238">
+          <caret line="12391" column="15" selection-start-line="12391" selection-start-column="15" selection-end-line="12391" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/data2/feature_word.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/Word2Vec_averge/review_dianping_12908_split_comma.json" />
+    <entry file="file://$PROJECT_DIR$/q2/data2/feature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/Word2Vec_tfidf/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/Word2Vec_tfidf/feature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="38" column="76" selection-start-line="38" selection-start-column="76" selection-end-line="38" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/data2/Analysis.ipynb">
+      <provider selected="true" editor-type-id="jupyter-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/MuTao/lib/python3.7/site-packages/gensim/models/base_any2vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="600" selection-start-line="600" selection-end-line="600" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/data2/tfidf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/Doc2Vec/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#1#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/data2/feature_doc2vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/data2/feature.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="176">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/Word2Vec_averge/feature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/Doc2Vec/feature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/Word2Vec_averge/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-62">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/Word2Vec_averge/result.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/data2/cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="142" column="23" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1555506135817" expanded="true" signature="4523:5062" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/Word2Vec_tfidf/cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="140" column="33" selection-start-line="140" selection-start-column="33" selection-end-line="140" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/Doc2Vec/feature_doc2vec.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/Doc2Vec/cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q2/Word2Vec_averge/cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1555652403765" expanded="true" signature="1106:1468" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
