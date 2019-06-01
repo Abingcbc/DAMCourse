@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ab2cccb-20aa-4a9a-902f-4a348ceaf5b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/final_project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRACLUS_old.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/formula.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment3/cnn_regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRACLUS.py" beforeDir="false" afterPath="$PROJECT_DIR$/TRACLUS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="23" column="117" selection-start-line="23" selection-start-column="117" selection-end-line="23" selection-end-column="117" />
+            <state relative-caret-position="422">
+              <caret line="23" column="118" selection-start-line="23" selection-start-column="118" selection-end-line="23" selection-end-column="118" />
             </state>
           </provider>
         </entry>
@@ -59,21 +53,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TRACLUS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="276" column="25" selection-start-line="276" selection-start-column="25" selection-end-line="276" selection-end-column="25" />
+            <state relative-caret-position="-1588">
+              <caret line="152" column="13" lean-forward="true" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#2039#2110#0" />
-                <element signature="e#2182#2362#0" />
-                <element signature="e#2547#4729#0" />
-                <element signature="e#4821#5347#0" />
-                <element signature="e#5390#5616#0" />
-                <element signature="e#5660#6881#0" />
-                <element signature="e#6953#7341#0" />
-                <element signature="e#7390#7831#0" />
-                <element signature="e#7926#8424#0" />
-                <element signature="e#8543#9638#0" />
-                <element signature="e#9692#9835#0" />
+                <element signature="e#2015#2086#0" />
+                <element signature="e#2158#2338#0" />
+                <element signature="e#2523#4705#0" />
+                <element signature="e#6929#7317#0" />
+                <element signature="e#7366#7807#0" />
+                <element signature="e#7902#8400#0" />
+                <element signature="e#8427#9596#0" />
+                <element signature="e#9668#9811#0" />
+                <element signature="e#9842#12713#0" />
               </folding>
             </state>
           </provider>
@@ -192,6 +184,9 @@
       <module name="final_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -248,17 +243,17 @@
       <workItem from="1558071167362" duration="530000" />
       <workItem from="1559099180624" duration="24328000" />
       <workItem from="1559220296423" duration="3287000" />
+      <workItem from="1559290826594" duration="1703000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75261000" />
+    <option name="totallyTimeSpent" value="76964000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20100144" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -277,7 +272,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49391305" weight="0.3297568" />
+      <window_info active="true" anchor="right" id="SciView" order="3" sideWeight="0.49391305" visible="true" weight="0.3297568" />
       <window_info anchor="right" id="Database" order="4" weight="0.3297568" />
       <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" order="5" sideWeight="0.50608695" side_tool="true" weight="0.3297568" />
     </layout>
@@ -341,28 +336,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="23" column="117" selection-start-line="23" selection-start-column="117" selection-end-line="23" selection-end-column="117" />
+        <state relative-caret-position="422">
+          <caret line="23" column="118" selection-start-line="23" selection-start-column="118" selection-end-line="23" selection-end-column="118" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TRACLUS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="276" column="25" selection-start-line="276" selection-start-column="25" selection-end-line="276" selection-end-column="25" />
+        <state relative-caret-position="-1588">
+          <caret line="152" column="13" lean-forward="true" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#2039#2110#0" />
-            <element signature="e#2182#2362#0" />
-            <element signature="e#2547#4729#0" />
-            <element signature="e#4821#5347#0" />
-            <element signature="e#5390#5616#0" />
-            <element signature="e#5660#6881#0" />
-            <element signature="e#6953#7341#0" />
-            <element signature="e#7390#7831#0" />
-            <element signature="e#7926#8424#0" />
-            <element signature="e#8543#9638#0" />
-            <element signature="e#9692#9835#0" />
+            <element signature="e#2015#2086#0" />
+            <element signature="e#2158#2338#0" />
+            <element signature="e#2523#4705#0" />
+            <element signature="e#6929#7317#0" />
+            <element signature="e#7366#7807#0" />
+            <element signature="e#7902#8400#0" />
+            <element signature="e#8427#9596#0" />
+            <element signature="e#9668#9811#0" />
+            <element signature="e#9842#12713#0" />
           </folding>
         </state>
       </provider>

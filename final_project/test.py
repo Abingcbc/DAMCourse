@@ -21,4 +21,4 @@ def readTrajectoryDataset(fileName):
 
     return trajectorySet
 
-TRACLUS.TRACLUS(readTrajectoryDataset('/Users/cbc/Project/Python/DAMCourse/final_project/data_package/training_data/95.txt'))
+TRACLUS.TRACLUS(readTrajectoryDataset('/Users/cbc/Project/Python/DAMCourse/final_project/data_package/training_data/96.txt'))

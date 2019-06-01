@@ -237,7 +237,6 @@ def TRACLUS(trajectorySet):
                         clusters[cluster_id].append(segments[x])
             del queue[0]
 
-    # TODO: According to this project situation, the cluster number should always be one!!!
     def group():
         # ATTENTION: The cluster_id is accumulating from 1
         cluster_id = 1
@@ -263,6 +262,8 @@ def TRACLUS(trajectorySet):
         for cluster_id, cluster in clusters.items():
             if len(cluster) >= min_lns:
                 final_cluster.append(cluster)
+                for s in cluster:
+                    plt.plot((s.start.x,s.end.x), (s.start.y,s.end.y), c='purple')
 
     def calAverageDirectionVector(cluster):
         v = np.sum([[segment.end.x - segment.start.x, segment.end.y - segment.start.y] for segment in cluster], axis=0)
