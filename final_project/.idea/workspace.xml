@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ab2cccb-20aa-4a9a-902f-4a348ceaf5b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Assignment3/cnn_regression.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Assignment3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TRACLUS.py" beforeDir="false" afterPath="$PROJECT_DIR$/TRACLUS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solution.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,6 +35,8 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="600">
               <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+            <state relative-caret-position="452">
+              <caret line="41" column="27" lean-forward="true" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -46,6 +49,8 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="575">
               <caret line="23" column="118" selection-start-line="23" selection-start-column="118" selection-end-line="23" selection-end-column="118" />
+            <state relative-caret-position="374">
+              <caret line="22" column="118" selection-start-line="22" selection-start-column="118" selection-end-line="22" selection-end-column="118" />
             </state>
           </provider>
         </entry>
@@ -55,14 +60,20 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
               <caret line="166" column="23" selection-start-line="166" selection-start-column="23" selection-end-line="166" selection-end-column="23" />
+            <state relative-caret-position="286">
+              <caret line="363" selection-start-line="363" selection-end-line="363" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <element signature="e#2015#2086#0" />
                 <element signature="e#2158#2338#0" />
-                <element signature="e#2523#4705#0" />
+                <element signature="e#4797#5323#0" />
+                <element signature="e#5366#5592#0" />
+                <element signature="e#5613#6898#0" />
                 <element signature="e#6929#7317#0" />
                 <element signature="e#7366#7807#0" />
                 <element signature="e#7902#8400#0" />
+                <element signature="e#8427#9639#0" />
+                <element signature="e#9693#9836#0" />
               </folding>
             </state>
           </provider>
@@ -81,12 +92,15 @@
     <findStrings>
       <find>;</find>
       <find>for</find>
-      <find>line_segments</find>
       <find>prin</find>
       <find>0x10a72e7b8</find>
       <find>ding</find>
       <find>print</find>
       <find>segment</find>
+      <find>line_segments</find>
+      <find>red</find>
+      <find>line</find>
+      <find>plt</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -100,8 +114,8 @@
         <option value="$PROJECT_DIR$/vague_c_mean.py" />
         <option value="$PROJECT_DIR$/formula.py" />
         <option value="$PROJECT_DIR$/template.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/TRACLUS.py" />
+        <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
   </component>
@@ -183,9 +197,6 @@
       <module name="final_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -248,16 +259,19 @@
       <workItem from="1559290826594" duration="1703000" />
       <workItem from="1559448119621" duration="789000" />
       <workItem from="1559449350474" duration="113000" />
+      <workItem from="1559471557176" duration="7724000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="77866000" />
+    <option name="totallyTimeSpent" value="84688000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20911528" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2067239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -277,6 +291,11 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" sideWeight="0.49391305" weight="0.32908848" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.30722892" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49391305" weight="0.3297568" />
       <window_info anchor="right" id="Database" order="4" weight="0.3297568" />
       <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" order="5" sideWeight="0.50608695" side_tool="true" weight="0.3297568" />
     </layout>
@@ -287,6 +306,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/final_project$template.coverage" NAME="template Coverage Results" MODIFIED="1559112294267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/final_project$TRACLUS.coverage" NAME="TRACLUS Coverage Results" MODIFIED="1557466421191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/final_project$test.coverage" NAME="test Coverage Results" MODIFIED="1559477215894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/final_project$vague_c_mean.coverage" NAME="vague_c_mean Coverage Results" MODIFIED="1557061520060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
@@ -305,6 +325,10 @@
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+    <entry file="file://$USER_HOME$/anaconda3/envs/DataMining/lib/python3.7/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
         </state>
       </provider>
     </entry>
@@ -320,6 +344,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/DataMining/lib/python3.7/site-packages/IPython/core/interactiveshell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="3295" selection-start-line="3295" selection-end-line="3295" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TRACLUS_old.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="32" column="4" selection-start-line="32" selection-end-line="32" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="41" column="27" lean-forward="true" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -330,6 +375,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="23" column="118" selection-start-line="23" selection-start-column="118" selection-end-line="23" selection-end-column="118" />
+        <state relative-caret-position="374">
+          <caret line="22" column="118" selection-start-line="22" selection-start-column="118" selection-end-line="22" selection-end-column="118" />
         </state>
       </provider>
     </entry>
@@ -337,14 +384,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="166" column="23" selection-start-line="166" selection-start-column="23" selection-end-line="166" selection-end-column="23" />
+        <state relative-caret-position="286">
+          <caret line="363" selection-start-line="363" selection-end-line="363" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
             <element signature="e#2015#2086#0" />
             <element signature="e#2158#2338#0" />
-            <element signature="e#2523#4705#0" />
+            <element signature="e#4797#5323#0" />
+            <element signature="e#5366#5592#0" />
+            <element signature="e#5613#6898#0" />
             <element signature="e#6929#7317#0" />
             <element signature="e#7366#7807#0" />
             <element signature="e#7902#8400#0" />
+            <element signature="e#8427#9639#0" />
+            <element signature="e#9693#9836#0" />
           </folding>
         </state>
       </provider>
