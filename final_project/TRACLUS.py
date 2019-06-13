@@ -32,9 +32,10 @@ line_count = 0
 
 class Point:
 
-    def __init__(self, x, y):
+    def __init__(self, x, y, time):
         self.x = x
         self.y = y
+        self.time_stamp = time
 
     def __eq__(self, other):
         return self.x == other.x and self.y == other.y
@@ -42,10 +43,11 @@ class Point:
 
 class EndPoint:
 
-    def __init__(self, x, y, segment_id):
+    def __init__(self, x, y, segment_id, time):
         self.x = x
         self.y = y
         self.segment_id = segment_id
+        self.time_stamp = time
 
 
 class Segment:
@@ -81,11 +83,10 @@ def TRACLUS(trajectorySet):
     mintlist = []
     min_lns = 3
     epsilon = 1
-    gama = 0.1
+    gama = 0.3
     w_per = 1
     w_par = 1
     w_the = 1
-    line_segments = []
     final_cluster = []
 
     def calEuclideanDistance(point1: Point, point2: Point):
@@ -105,15 +106,15 @@ def TRACLUS(trajectorySet):
         length1 = calEuclideanDistance(point1, point2)
         length2 = calEuclideanDistance(point3, point4)
         if length1 < length2:
-            point_is = Point(point3.x, point3.y)
-            point_ie = Point(point4.x, point4.y)
-            point_js = Point(point1.x, point1.y)
-            point_je = Point(point2.x, point2.y)
+            point_is = Point(point3.x, point3.y, point3.time_stamp)
+            point_ie = Point(point4.x, point4.y, point4.time_stamp)
+            point_js = Point(point1.x, point1.y, point1.time_stamp)
+            point_je = Point(point2.x, point2.y, point2.time_stamp)
         else:
-            point_is = Point(point1.x, point1.y)
-            point_ie = Point(point2.x, point2.y)
-            point_js = Point(point3.x, point3.y)
-            point_je = Point(point4.x, point4.y)
+            point_is = Point(point1.x, point1.y, point1.time_stamp)
+            point_ie = Point(point2.x, point2.y, point2.time_stamp)
+            point_js = Point(point3.x, point3.y, point3.time_stamp)
+            point_je = Point(point4.x, point4.y, point4.time_stamp)
             temp = length1
             length1 = length2
             length2 = temp
@@ -131,15 +132,15 @@ def TRACLUS(trajectorySet):
         b_per_s = point_js.y - k_per * point_js.x
         b_per_e = point_je.y - k_per * point_je.x
         l_par1, _ = calPoint2LineDistance(point_is, point_js, Point(point_js.x + 0.1,
-                                                                    k_per * (point_js.x + 0.1) + b_per_s))
+                                                                    k_per * (point_js.x + 0.1) + b_per_s, point_js.time_stamp))
         l_par2, _ = calPoint2LineDistance(point_ie, point_je, Point(point_je.x + 0.1,
-                                                                    k_per * (point_je.x + 0.1) + b_per_e))
+                                                                    k_per * (point_je.x + 0.1) + b_per_e, point_je.time_stamp))
         parallel_distance = min(l_par1, l_par2)
 
         # compute angle distance
         # FIXME: This part'naming doesn't follow the paper. Don't misunderstand d_theta!
         d_theta, _ = calPoint2LineDistance(point_js, point_je, Point(point_je.x + 0.1,
-                                                                     k_per * (point_je.x + 0.1) + b_per_e))
+                                                                     k_per * (point_je.x + 0.1) + b_per_e, point_je.time_stamp))
         angle_distance = np.sqrt(length1 ** 2 - d_theta ** 2)
         return perpendicular_distance, parallel_distance, angle_distance
 
@@ -175,7 +176,11 @@ def TRACLUS(trajectorySet):
         for line in trajectorySet:
             temp = [[point['x'], point['y']] for point in line]
             X.append(temp)
-            temp = [Point(point['x'], point['y']) for point in line]
+            # 统一按面积小的为时间点后
+            if line[0]['x']*line[0]['y'] < line[-1]['x']*line[0]['y']:
+                temp = [Point(point['x'], point['y'], index) for index, point in enumerate(line)]
+            else:
+                temp = [Point(point['x'], point['y'], len(line)-index) for index, point in enumerate(line)]
             X_point.append(temp)
         X = np.array(X)
 
@@ -197,8 +202,10 @@ def TRACLUS(trajectorySet):
                     length += 1
             characteristic_points.append(line[-1])
             line_cp.append(characteristic_points)
+        line_segments = []
         for index, line in enumerate(line_cp):
-            line_segments.append([Segment(index, line[i], line[i + 1]) for i in range(len(line) - 1)])
+            line_segments.append(Segment(index, line[0], line[1]))
+        return np.array(line_segments)
 
     def calENeighbor(segment: Segment, segments: np.ndarray):
         e_neighbor = []
@@ -237,24 +244,20 @@ def TRACLUS(trajectorySet):
                         clusters[cluster_id].append(segments[x])
             del queue[0]
 
-    def group():
+    def group(line_segments):
         # ATTENTION: The cluster_id is accumulating from 1
         cluster_id = 1
-        segs = []
-        for line in line_segments:
-            segs = segs + line
-        segments = np.array(segs)
-        segment_cluster = np.zeros(segments.shape)
+        segment_cluster = np.zeros(line_segments.shape)
         clusters = {1: []}
-        for index, segment in np.ndenumerate(segments):
+        for index, segment in np.ndenumerate(line_segments):
             if segment_cluster[index[0]] == 0:
-                e_neighbor = calENeighbor(segment, segments)
+                e_neighbor = calENeighbor(segment, line_segments)
                 if len(e_neighbor) >= min_lns:
                     for i in e_neighbor:
-                        clusters[cluster_id].append(segments[i])
+                        clusters[cluster_id].append(line_segments[i])
                         segment_cluster[i] = cluster_id
                     queue = [l for l in e_neighbor if l != index[0]]
-                    expandCluster(queue, segments, cluster_id, segment_cluster, clusters)
+                    expandCluster(queue, line_segments, cluster_id, segment_cluster, clusters)
                     cluster_id += 1
                     clusters[cluster_id] = []
                 else:
@@ -280,21 +283,22 @@ def TRACLUS(trajectorySet):
             all_segments = all_segments + cluster
 
         aver_direct_v = calAverageDirectionVector(all_segments)
-        plt.plot((0,0),(aver_direct_v[0],aver_direct_v[1]),c='red')
+        print(aver_direct_v)
+        plt.plot((0,aver_direct_v[0]),(0,aver_direct_v[1]),c='red')
         v_len = np.sqrt(aver_direct_v[0] ** 2 + aver_direct_v[1] ** 2)
         trans_matrix = np.array([[aver_direct_v[0] / v_len, aver_direct_v[1] / v_len],
                                  [-aver_direct_v[1] / v_len, aver_direct_v[0] / v_len]])
         all_end_points = []
         for num, s in enumerate(all_segments):
-            plt.scatter(s.start.x, s.start.y, c='yellow')
-            plt.scatter(s.end.x, s.end.y, c='yellow')
+            # plt.scatter(s.start.x, s.start.y, c='yellow')
+            # plt.scatter(s.end.x, s.end.y, c='yellow')
             point1 = trans_matrix.dot(np.array([[s.start.x], [s.start.y]]))
             point2 = trans_matrix.dot(np.array([[s.end.x], [s.end.y]]))
-            all_end_points.append(EndPoint(point1[0][0], point1[1][0], num))
-            all_end_points.append(EndPoint(point2[0][0], point2[1][0], num))
+            all_end_points.append(EndPoint(point1[0][0], point1[1][0], num, s.start.time_stamp))
+            all_end_points.append(EndPoint(point2[0][0], point2[1][0], num, s.start.time_stamp))
             s.k = (point2[1][0] - point1[1][0]) / (point2[0][0] - point1[0][0])
             s.b = point1[1][0] - s.k * point1[0][0]
-        all_end_points = sorted(all_end_points, key=lambda p: p.x)
+        all_end_points = sorted(all_end_points, key=lambda p: p.time_stamp)
         index = 0
         insert_list = []
         delete_list = []
@@ -306,7 +310,7 @@ def TRACLUS(trajectorySet):
             delete_list[:] = []
             pre_pos = all_end_points[index].x
 
-            while index < len(all_end_points) and all_end_points[index].x - pre_pos <= gama:
+            while index < len(all_end_points) and abs(all_end_points[index].x - pre_pos) <= gama:
                 if not cur_active[all_end_points[index].segment_id]:
                     insert_list.append(all_end_points[index].segment_id)
                     cur_active[all_end_points[index].segment_id] = True
@@ -326,33 +330,28 @@ def TRACLUS(trajectorySet):
                     temp_count += 1
                 temp_y = temp_y / temp_count
                 aver_p = np.linalg.solve(trans_matrix, [[pre_pos], [temp_y]])
-                out.append(Point(aver_p[0][0], aver_p[1][0]))
+                print(pre_pos)
+                out.append(Point(aver_p[0][0], aver_p[1][0],0))
             for delete_p in delete_list:
                 active_list.remove(delete_p)
         return out
 
-
     global line_count
     for i in range(1, 100):
         epsilon = i / 100
-        partition(trajectorySet)
-        segs = []
-        for line in line_segments:
-            segs = segs + line
-        segments = np.array(segs)
+        segments = partition(trajectorySet)
         score_t, min_t = ParameterSelectFunc(segments)
         scoreList.append(score_t)
         mintlist.append(min_t)
-        line_segments = []
 
     epsilon = (np.argsort(scoreList)[0] + 1) / 100
-    gama = epsilon
     min_lns = int(mintlist[np.argsort(scoreList)[0]])
+    gama = epsilon
 
     print(str(line_count) + ": " + str(epsilon) + " " \
           + str(min_lns) + " " + str(datetime.datetime.now()))
-    partition(trajectorySet)
-    group()
+    segments = partition(trajectorySet)
+    group(segments)
     r = represent()
 
     resultPoints = []
@@ -360,7 +359,7 @@ def TRACLUS(trajectorySet):
     for j in range(len(r) - 1):
         point_result = {'x': r[j].x, 'y': r[j].y}
         resultPoints.append(point_result)
-        plt.plot([r[j].x, r[j + 1].x], [r[j].y, r[j + 1].y], c="blue")
+        plt.plot([r[j].x, r[j + 1].x], [r[j].y, r[j + 1].y], 'bo-', c="blue")
     plt.show()
     resultPoints.append({'x':r[-1].x, 'y':r[-1].y})
     if len(resultPoints) == 0:

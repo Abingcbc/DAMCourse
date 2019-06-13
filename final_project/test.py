@@ -1,6 +1,5 @@
 import TRACLUS
 
-
 def readTrajectoryDataset(fileName):
     s = open(fileName, 'r').read()
     comp = s.split("\n")
@@ -21,4 +20,4 @@ def readTrajectoryDataset(fileName):
 
     return trajectorySet
 
-TRACLUS.TRACLUS(readTrajectoryDataset('/Users/cbc/Project/Python/DAMCourse/final_project/data_package/training_data/96.txt'))
+TRACLUS.TRACLUS(readTrajectoryDataset('/Users/cbc/Project/Python/DAMCourse/final_project/data_package/training_data/95.txt'))
