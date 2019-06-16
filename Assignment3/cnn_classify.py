@@ -76,20 +76,19 @@ history = LossHistory()
 def build_model():
     m = Sequential()
     m.add(Conv2D(32, kernel_size=3, activation='relu', input_shape=(5, 6, 1)))
-    # m.add(Conv2D(32, kernel_size=3, activation='relu'))
     m.add(MaxPooling2D())
     m.add(BatchNormalization())
     m.add(Flatten())
     m.add(Dense(1024, activation='relu'))
     m.add(Dense(512, activation='relu'))
     m.add(Dense(357, activation='softmax'))
-    r = optimizers.Adam(lr=0.0001)
+    r = optimizers.Adam(lr=0.001)
     m.compile(optimizer=r, loss='categorical_crossentropy', metrics=['accuracy'])
     return m
 
 
 model = build_model()
-model.fit(X, y, epochs=300, batch_size=1024, callbacks=[history])
+model.fit(X, y, epochs=2000, batch_size=1024, callbacks=[history])
 history.loss_plot('epoch')
 result = model.predict(X[:1])
 print(np.argmax(result))
