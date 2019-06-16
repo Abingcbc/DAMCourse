@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from keras.models import Sequential, Model
-from keras.layers import Dense, Conv2D, MaxPooling2D, Flatten, Dropout, Input
+from keras.layers import Dense, Conv2D, MaxPooling2D, Flatten, Dropout, BatchNormalization
 from keras import optimizers
 from sklearn.model_selection import KFold
 import keras
@@ -53,15 +53,15 @@ class LossHistory(keras.callbacks.Callback):
         plt.show()
 
 
-data = pd.read_csv('hwphase2data_update/train_2g.csv')
+data = pd.read_csv('hwphase2data_update/new_train.csv')
 
 X = [
     np.array([[mr[4:9],
-               mr[9:14] if -999 not in mr[9:14] else mr[4:9],
-               mr[14:19] if -999 not in mr[14:19] else mr[4:9],
-               mr[19:24] if -999 not in mr[19:24] else mr[4:9],
-               mr[24:29] if -999 not in mr[24:29] else mr[4:9],
-               mr[29:34] if -999 not in mr[29:34] else mr[4:9]]]).T for mr in data.values
+              mr[9:14],
+              mr[14:19],
+              mr[19:24],
+              mr[24:29],
+              mr[29:34]]]).T for mr in data.values
 ]
 X = np.array(X)
 y = []
@@ -79,6 +79,7 @@ def build_model():
     # m.add(Dropout(0.1))
     # m.add(MaxPooling2D())
     m.add(Conv2D(16, kernel_size=2, activation='relu'))
+    m.add(BatchNormalization())
     m.add(Flatten())
     m.add(Dense(8, activation='relu'))
     m.add(Dense(2))
@@ -91,7 +92,7 @@ def build_model():
 history = LossHistory()
 
 # floder = KFold(n_splits=5, random_state=33)
-#
+
 # result_mse = []
 # result_mae = []
 # for train_index, val_index in floder.split(X, y):
@@ -106,9 +107,9 @@ history = LossHistory()
 # print(np.mean(result_mse))
 # print(np.mean(result_mae))
 
-# model = build_model()
-# model.fit(X, y, epochs=800, batch_size=128, callbacks=[history])
-# history.loss_plot('epoch')
-# result = model.predict(X[:5])
-# for i in range(0, 5):
-#     print(utm.to_latlon(result[i][0], result[i][1], zone_number, zone_letter))
+model = build_model()
+model.fit(X, y, epochs=800, batch_size=128, callbacks=[history])
+history.loss_plot('epoch')
+result = model.predict(X[:5])
+for i in range(0, 5):
+    print(utm.to_latlon(result[i][0], result[i][1], zone_number, zone_letter))
