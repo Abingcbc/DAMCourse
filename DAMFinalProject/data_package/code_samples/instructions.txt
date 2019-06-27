@@ -1,0 +1,24 @@
+The programs are to be executed on a Linux environment.
+To execute a program, go to the code_samples directory:
+> cd code_samples
+
+And run the commands below.
+A file "solution.txt" will be generated in the current directory.
+
+-Java
+compile: javac javaSample.java
+run:     java javaSample
+
+-Python
+run:     python pythonSample.py
+
+-PHP
+run:     php php_sample.php
+
+- Matlab
+run:     matlab -nodisplay -nosplash -nodesktop -r "run('matlab_sample.m');exit;"
+
+
+Support for:
+- C/C++
+to be added soon.
